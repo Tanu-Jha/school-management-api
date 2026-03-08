@@ -1,0 +1,132 @@
+{
+	"id": "90c24a11-eb0e-4411-8101-50353ae3466e",
+	"name": "School Management API",
+	"timestamp": "2026-03-08T17:33:47.699Z",
+	"collection_id": "50721876-a1563b78-a226-4350-8a43-fbb0207a6ca4",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-03-08T17:33:44.811Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1ec68118-9ad1-48ae-9ee1-3eccd7be7a01",
+			"name": "Health Check",
+			"url": "https://school-management-api-production-8eb4.up.railway.app/",
+			"time": 1123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1123
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f5ac7739-6bd0-429c-9841-d4a784b708e7",
+			"name": "Add School — valid",
+			"url": "https://school-management-api-production-8eb4.up.railway.app/addSchool",
+			"time": 295,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				295
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b289e99d-c99c-47ff-98b6-06d96aebbe94",
+			"name": "Add School — validation error",
+			"url": "https://school-management-api-production-8eb4.up.railway.app/addSchool",
+			"time": 283,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				283
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "568c071b-9968-4cd3-ac25-99c8eefec486",
+			"name": "List Schools — by proximity",
+			"url": "https://school-management-api-production-8eb4.up.railway.app/listSchools?latitude=25.6100&longitude=85.1400",
+			"time": 276,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				276
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "50f433fd-5f14-4038-ac71-07d41ff069b0",
+			"name": "List Schools — missing params",
+			"url": "https://school-management-api-production-8eb4.up.railway.app/listSchools",
+			"time": 353,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				353
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2330,
+	"collection": {
+		"requests": [
+			{
+				"id": "1ec68118-9ad1-48ae-9ee1-3eccd7be7a01",
+				"method": "GET"
+			},
+			{
+				"id": "f5ac7739-6bd0-429c-9841-d4a784b708e7",
+				"method": "POST"
+			},
+			{
+				"id": "b289e99d-c99c-47ff-98b6-06d96aebbe94",
+				"method": "POST"
+			},
+			{
+				"id": "568c071b-9968-4cd3-ac25-99c8eefec486",
+				"method": "GET"
+			},
+			{
+				"id": "50f433fd-5f14-4038-ac71-07d41ff069b0",
+				"method": "GET"
+			}
+		]
+	}
+}
